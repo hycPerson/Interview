@@ -9,3 +9,6 @@ IoC容器（ApplicationContext）
 https://www.cnblogs.com/rekent/tag/Spring/
 
 根据 Handler 来找到支持它的 HandlerAdapter
+
+
+beanFactory 本身也用动态代理实现
