@@ -12,3 +12,5 @@ https://www.cnblogs.com/rekent/tag/Spring/
 
 
 beanFactory 本身也用动态代理实现
+
+![avatar](https://github.com/hycPerson/Interview/blob/master/pics/Spring%E6%BA%90%E7%A0%81.png)
