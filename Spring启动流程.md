@@ -2,11 +2,8 @@
 部署web应用时，web容器（比如Tomcat）会读取配置在web.xml中的监听器，从而启动spring容器。
 
     1、加载监听器类
-    
     2、读取applicationContext.xml
-    
     3、读取spring-mvc.xml
-    
     4、形成ServletContext
 ```xml
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
