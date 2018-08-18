@@ -29,9 +29,13 @@ GenericServlet.init()
 HttpServletBean.init() 
 
 ----HttpServletBean.initBeanWrapper(BeanWrapper) 
+
 ----HttpServletBean.initServletBean() 
+
 --------FrameworkServlet.initServletBean()  
+
 ------------FrameworkServlet.initWebApplicationContext()  
+
 ------------FrameworkServlet.initFrameworkServlet() 
 ## 4、初始化web.xml中配置的Servlet，调用initStrategies方法
 MultipartResolver 用于处理文件上传
