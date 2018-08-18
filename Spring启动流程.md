@@ -22,7 +22,7 @@
 
 ![avatar](https://github.com/hycPerson/Interview/blob/master/pics/ContextLoaderListener.png)
 
-从ServletContext
+
 ## 3、初始化
 GenericServlet.init() 
 
