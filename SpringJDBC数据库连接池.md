@@ -12,7 +12,7 @@
 Spring里主要是dbcp
 
 ## dbcp 连接池创建
-[png](https://github.com/hycPerson/Interview/blob/master/pics/ContextLoaderListener.png)
+![png](https://github.com/hycPerson/Interview/blob/master/pics/ContextLoaderListener.png)
 里主要用的是BasicDataSource
 
 因为从applicationContext.xml可以看出
