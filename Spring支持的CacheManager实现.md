@@ -1,0 +1,3 @@
+1、SimpleCacheManager使用简单的Collection来存储缓存，主要用来测试用途
+2、ConcurrentMapCacheManager使用ConcurrentMap来存储缓存
+3、RedisCacheManager

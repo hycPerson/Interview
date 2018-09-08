@@ -1,0 +1,6 @@
+1、首先SqlSessionFactory会话工厂会通过Resources资源信息加载对象获取SqlMapConfig.xml配置文件信息，  
+2、然后产生可以与数据库进行交互的会话实例类SqlSession。
+3、会话实例类SqlSession可以根据Mappper配置文件中的SQL配置，去执行相应的增删查改操作。
+4、而在SqlSession类内部，是通过Executor（分为基本执行器和缓存执行器）对数据库进行操作的。
+5、执行器Executor与数据库交互，依靠的是底层分装对象Mappered Statement，它封装了从Mapper文件中读取的信息（包括SQL语句，输入参数，输出结果类型）
+6、通过执行器Executor与底层封装对象Mappered Statement的结合，MyBatis就实现了与数据库进行交互的功能。

@@ -94,8 +94,7 @@ sudo ln -s /var/apps/p2gblock-0.0.1-SNAPSHOT.jar  /etc/init.d/ccc
      systemctl start test
 
 #  vi filename :打开或新建文件，并将光标置于第一行首
-# systemctl start test.service
-# systemctl status test.service
+
 systemctl reload test.service
 rm 删除
 
@@ -108,7 +107,7 @@ firewall-cmd --zone=public --add-port=9090/tcp --permanent
 
 java -jar /var/apps/p2gblock-0.0.1-SNAPSHOT.jar
 
- /usr/java -jar /var/apps/p2gblock-0.0.1-SNAPSHOT.jar
+/usr/java -jar /var/apps/p2gblock-0.0.1-SNAPSHOT.jar
 
 
  nohup java -jar /var/apps/p2gblock-0.0.1-SNAPSHOT.jar
@@ -120,3 +119,39 @@ java -jar /var/apps/p2gblock-0.0.1-SNAPSHOT.jar
 
  /usr/java
  /etc/systemd/system
+
+
+ExecStart=/etc/systemd/system/startTest.sh
+ExecStop=/etc/systemd/system/stopTest.sh
+
+/usr/java/jdk1.8.0_181/bin/java
+
+
+
+
+systemctl restart firewalld.service.service
+
+
+
+# firewall-cmd --zone=public --add-port=9090/tcp --permanent
+# firewall-cmd --reload
+# firewall-cmd --zone= public --query-port=9090/tcp
+
+# systemctl restart test.service
+# firewall-cmd --query-port=9090/tcp
+# firewall-cmd --add-port=9090/tcp
+
+
+telnet 116.62.244.230 9090
+wget 116.62.244.230:9090
+wget 172.16.62.90:9090
+
+
+
+# systemctl start test.service
+# systemctl status test.service -l
+# firewall-cmd --add-port=80/tcp
+# systemctl enable firewalld 开机启用 systemctl start firewalld 启动
+# firewall-cmd --query-port=80/tcp
+# wget 172.16.62.90:80 私网测试
+# wget 116.62.244.230:80 公网测试
